@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHabitViewController" customModule="Habitual" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Mpw-Ww-YVv" id="LSw-hn-Z6Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-vm-55u">
+                    <rect key="frame" x="15" y="826" width="384" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="i4C-aa-hBy"/>
+                    </constraints>
+                    <state key="normal" title="Pick Photo"/>
+                    <connections>
+                        <action selector="pickPhotoButtonPressedWithSender:" destination="-1" eventType="touchUpInside" id="OlV-RO-uk0"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mpw-Ww-YVv">
+                    <rect key="frame" x="15" y="59" width="384" height="743"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="743" id="8Lf-g4-5c5"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="631" id="qes-8M-Tsd"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iLf-bU-iF3">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bgE-6j-stA"/>
+                        <outlet property="delegate" destination="-1" id="Vol-La-oMa"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mpw-Ww-YVv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3eb-f1-Kf2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hYk-vm-55u" secondAttribute="trailing" constant="15" id="4LW-Zb-OMt"/>
+                <constraint firstItem="Mpw-Ww-YVv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="6P3-df-sqC"/>
+                <constraint firstItem="hYk-vm-55u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="WTe-Dg-FEY"/>
+                <constraint firstItem="Mpw-Ww-YVv" firstAttribute="centerX" secondItem="hYk-vm-55u" secondAttribute="centerX" id="gH5-KG-KT3"/>
+                <constraint firstAttribute="bottom" secondItem="hYk-vm-55u" secondAttribute="bottom" constant="20" id="gPQ-lk-e9B"/>
+                <constraint firstItem="Mpw-Ww-YVv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="kMv-kW-GWt"/>
+                <constraint firstItem="hYk-vm-55u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="twk-94-76n"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+</document>
