@@ -64,7 +64,6 @@
 		B0BE2D71240879B20005530E = {
 			isa = PBXGroup;
 			children = (
-				B0BE2D9624087C530005530E /* UIViewControllerExtensions.swift */,
 				B0BE2D7C240879B20005530E /* Habitual */,
 				B0BE2D7B240879B20005530E /* Products */,
 			);
@@ -81,6 +80,7 @@
 		B0BE2D7C240879B20005530E /* Habitual */ = {
 			isa = PBXGroup;
 			children = (
+				B0BE2D9624087C530005530E /* UIViewControllerExtensions.swift */,
 				B00FE0BF242C0A0100608FDF /* DateExtensions.swift */,
 				B00FE0BD242C07C200608FDF /* Habit.swift */,
 				B0E2DD8D243151EE0095AA37 /* PersistenceLayer.swift */,
