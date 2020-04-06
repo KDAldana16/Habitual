@@ -20,6 +20,8 @@
 		B0BE2D9324087BA90005530E /* HabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE2D9124087BA90005530E /* HabitsTableViewController.swift */; };
 		B0BE2D9424087BA90005530E /* HabitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BE2D9224087BA90005530E /* HabitsTableViewController.xib */; };
 		B0BE2D9724087C530005530E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE2D9624087C530005530E /* UIViewControllerExtensions.swift */; };
+		B0CFEE73243A95EB00D71FF7 /* HabitDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFEE71243A95EB00D71FF7 /* HabitDetailedViewController.swift */; };
+		B0CFEE74243A95EB00D71FF7 /* HabitDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0CFEE72243A95EB00D71FF7 /* HabitDetailedViewController.xib */; };
 		B0E2DD8E243151EE0095AA37 /* PersistenceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2DD8D243151EE0095AA37 /* PersistenceLayer.swift */; };
 		B0E2DD91243156E10095AA37 /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2DD8F243156E10095AA37 /* AddHabitViewController.swift */; };
 		B0E2DD92243156E10095AA37 /* AddHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E2DD90243156E10095AA37 /* AddHabitViewController.xib */; };
@@ -43,6 +45,8 @@
 		B0BE2D9124087BA90005530E /* HabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewController.swift; sourceTree = "<group>"; };
 		B0BE2D9224087BA90005530E /* HabitsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitsTableViewController.xib; sourceTree = "<group>"; };
 		B0BE2D9624087C530005530E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		B0CFEE71243A95EB00D71FF7 /* HabitDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailedViewController.swift; sourceTree = "<group>"; };
+		B0CFEE72243A95EB00D71FF7 /* HabitDetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitDetailedViewController.xib; sourceTree = "<group>"; };
 		B0E2DD8D243151EE0095AA37 /* PersistenceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayer.swift; sourceTree = "<group>"; };
 		B0E2DD8F243156E10095AA37 /* AddHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
 		B0E2DD90243156E10095AA37 /* AddHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitViewController.xib; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				B0E2DD90243156E10095AA37 /* AddHabitViewController.xib */,
 				B0ABDF5624317E7E001115A9 /* ConfirmHabitViewController.swift */,
 				B0ABDF5724317E7E001115A9 /* ConfirmHabitViewController.xib */,
+				B0CFEE71243A95EB00D71FF7 /* HabitDetailedViewController.swift */,
+				B0CFEE72243A95EB00D71FF7 /* HabitDetailedViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CFEE74243A95EB00D71FF7 /* HabitDetailedViewController.xib in Resources */,
 				B0BE2D8A240879B30005530E /* LaunchScreen.storyboard in Resources */,
 				B0E2DD92243156E10095AA37 /* AddHabitViewController.xib in Resources */,
 				B0ABDF5924317E7E001115A9 /* ConfirmHabitViewController.xib in Resources */,
@@ -186,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CFEE73243A95EB00D71FF7 /* HabitDetailedViewController.swift in Sources */,
 				B0BE2D9724087C530005530E /* UIViewControllerExtensions.swift in Sources */,
 				B00FE0BE242C07C200608FDF /* Habit.swift in Sources */,
 				B0BE2D7E240879B20005530E /* AppDelegate.swift in Sources */,

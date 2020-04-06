@@ -49,9 +49,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageViewIcon" destination="FvX-GH-4n5" id="M0p-s5-q8T"/>
-                <outlet property="labelHabitTitle" destination="Cf8-dU-0Fh" id="uVC-7d-GXf"/>
-                <outlet property="labelStreaks" destination="8FU-iu-okv" id="Z7X-lB-KY7"/>
+                <outlet property="imageViewIcon" destination="FvX-GH-4n5" id="piu-YJ-jdb"/>
+                <outlet property="labelHabitTitle" destination="Cf8-dU-0Fh" id="LN9-ok-MOf"/>
+                <outlet property="labelStreaks" destination="8FU-iu-okv" id="RGd-c6-WJ5"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
         </tableViewCell>

@@ -21,11 +21,22 @@ class ConfirmHabitViewController: UIViewController {
     
     var habitImage: Habit.Images!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
+    }
+    
+    private func updateUI() {
+        title = "New Habit"
+        habitImageView.image = habitImage.image
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+          
 
         // Do any additional setup after loading the view.
     }
+    
 
 
     /*

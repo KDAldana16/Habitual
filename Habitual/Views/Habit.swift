@@ -6,7 +6,6 @@
 //  Copyright © 2020 Karla Aldana. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct Habit: Codable {

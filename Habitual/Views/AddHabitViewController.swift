@@ -35,45 +35,23 @@ class AddHabitViewController: UIViewController {
         navigationController?.pushViewController(confirmHabitVC, animated: true)
     }
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        collectionView.register(HabitImageCollectionViewCell.nib, forCellWithReuseIdentifier: HabitImageCollectionViewCell.identifier)
-//        setupNavBar()
-//    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        updateUI()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView.register(HabitImageCollectionViewCell.nib, forCellWithReuseIdentifier: HabitImageCollectionViewCell.identifier)
+        setupNavBar()
     }
     
-    private func updateUI() {
-        title = "New Habit"
-        habitImageView.image = habitImage.image
-    }
-
     func setupNavBar() {
-        title = "Select Image"
-        
-        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelAddHabit(_:)))
-        navigationItem.leftBarButtonItem = cancelButton
-    }
+           title = "Select Image"
+           
+           let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelAddHabit(_:)))
+           navigationItem.leftBarButtonItem = cancelButton
+       }
     
     @objc func cancelAddHabit(_ sender: UIBarButtonItem) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
-    }
+           self.presentingViewController?.dismiss(animated: true, completion: nil)
+       }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension AddHabitViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -114,3 +92,12 @@ extension AddHabitViewController: UICollectionViewDataSource, UICollectionViewDe
     }
 }
 
+/*
+  // MARK: - Navigation
+
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      // Get the new view controller using segue.destination.
+      // Pass the selected object to the new view controller.
+  }
+  */

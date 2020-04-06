@@ -24,7 +24,7 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
-                <outlet property="habitImage" destination="DH2-dc-wWF" id="kZ3-eM-nJo"/>
+                <outlet property="habitImage" destination="DH2-dc-wWF" id="So3-Es-3vp"/>
             </connections>
             <point key="canvasLocation" x="139" y="142"/>
         </collectionViewCell>

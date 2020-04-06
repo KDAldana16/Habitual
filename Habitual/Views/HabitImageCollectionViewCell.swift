@@ -12,7 +12,7 @@ class HabitImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var habitImage: UIImageView!
 
-    static var identifier = "habit image cell"
+    static var identifier = "HabitImageCell"
     
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
