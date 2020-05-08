@@ -39,18 +39,16 @@ struct Habit: Codable {
     var title: String
     let dateCreated: Date = Date()
     var selectedImage: Habit.Images
-    
+
     var currentStreak: Int = 0
     var bestStreak: Int = 0
     var lastCompletionDate: Date?
     var numberOfCompletions: Int = 0
-    
-    
+
     var completedToday: Bool {
         return lastCompletionDate?.isToday ?? false
     }
-    
-    
+
     init(title: String, image: Habit.Images) {
         self.title = title
         self.selectedImage = image

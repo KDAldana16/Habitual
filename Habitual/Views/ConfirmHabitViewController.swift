@@ -10,8 +10,11 @@ import UIKit
 
 class ConfirmHabitViewController: UIViewController {
     
+    var habitImage: Habit.Images!
+    
     @IBOutlet weak var habitImageView: UIImageView!
     @IBOutlet weak var habitNameInputField: UITextField!
+    
     @IBAction func createHabitButtonPressed(_ sender: Any){
         var persistenceLayer = PersistenceLayer()
         guard let habitText = habitNameInputField.text else { return }
@@ -19,22 +22,16 @@ class ConfirmHabitViewController: UIViewController {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    var habitImage: Habit.Images!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
         updateUI()
     }
-    
+
     private func updateUI() {
         title = "New Habit"
         habitImageView.image = habitImage.image
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-          
-
-        // Do any additional setup after loading the view.
     }
     
 

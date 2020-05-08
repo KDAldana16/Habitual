@@ -15,28 +15,13 @@ class HabitTableViewCell: UITableViewCell {
     @IBOutlet weak var labelStreaks: UILabel!
     
     
-    func configure(_ habit: Habit) {
-        self.imageViewIcon.image = habit.selectedImage.image
-        self.labelHabitTitle.text = habit.title
-        self.labelStreaks.text = "streak: \(habit.currentStreak)"
-        
-        if habit.completedToday {
-            self.accessoryType = .checkmark
-        } else {
-            self.accessoryType = .disclosureIndicator
-        }
-    }
-    
-    
-//    Set the identifier for the custom cell
+    // Set the identifier for the custom cell
     static let identifier = "HabitCell"
-    
-//    Returning the xib file after instantiating it
+
+    // Returning the xib file after instantiating it
     static var nib: UINib {
-        return UINib(nibName: String(describing: self), bundle: nil)
+           return UINib(nibName: String(describing: self), bundle: nil)
     }
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,6 +32,20 @@ class HabitTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+
+        
+    }
+    
+    func configure(_ habit: Habit) {
+      self.imageViewIcon.image = habit.selectedImage.image
+      self.labelHabitTitle.text = habit.title
+      self.labelStreaks.text = "streak: \(habit.currentStreak)"
+
+      if habit.completedToday {
+        self.accessoryType = .checkmark
+      } else {
+       self.accessoryType = .disclosureIndicator
+      }
     }
     
 }

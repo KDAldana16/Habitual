@@ -30,8 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B00FE0BD242C07C200608FDF /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Habit.swift; path = Views/Habit.swift; sourceTree = "<group>"; };
-		B00FE0BF242C0A0100608FDF /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = Views/DateExtensions.swift; sourceTree = "<group>"; };
+		B00FE0BD242C07C200608FDF /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		B00FE0BF242C0A0100608FDF /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		B00FE0E1242C179800608FDF /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		B00FE0E2242C179800608FDF /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
 		B0ABDF5624317E7E001115A9 /* ConfirmHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmHabitViewController.swift; sourceTree = "<group>"; };
@@ -85,10 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				B0BE2D9624087C530005530E /* UIViewControllerExtensions.swift */,
-				B00FE0BF242C0A0100608FDF /* DateExtensions.swift */,
-				B00FE0BD242C07C200608FDF /* Habit.swift */,
-				B0E2DD8D243151EE0095AA37 /* PersistenceLayer.swift */,
 				B0BE2D7D240879B20005530E /* AppDelegate.swift */,
+				B0E2DD8D243151EE0095AA37 /* PersistenceLayer.swift */,
 				B0BE2D7F240879B20005530E /* SceneDelegate.swift */,
 				B0BE2D9524087BE00005530E /* Views */,
 				B0BE2D86240879B30005530E /* Assets.xcassets */,
@@ -101,6 +99,8 @@
 		B0BE2D9524087BE00005530E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B00FE0BF242C0A0100608FDF /* DateExtensions.swift */,
+				B00FE0BD242C07C200608FDF /* Habit.swift */,
 				B0BE2D9124087BA90005530E /* HabitsTableViewController.swift */,
 				B0BE2D9224087BA90005530E /* HabitsTableViewController.xib */,
 				B00FE0E1242C179800608FDF /* HabitTableViewCell.swift */,
